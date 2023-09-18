@@ -1,9 +1,9 @@
 // Задаём переменную  окна ввода языка. Используем prompt
-const resultLang = prompt('Выберите язык для общения: ru, en или de');
+const greetingLanguage = prompt('Выберите язык для общения: ru, en или de');
 
 //основной код, для перебора вариантов используем switch
 
-  switch(resultLang) {
+  switch(greetingLanguage) {
 	case 'en':
     case 'En':
 	case 'EN':

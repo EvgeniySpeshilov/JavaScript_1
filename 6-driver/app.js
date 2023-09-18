@@ -5,6 +5,6 @@ let hasLicence = true;  //  Говорит о наличии прав
 let isDrunk = false;     //  Показывает что пьян, если true
 
 // Основная строка кода , где проверяем все парамметры и если они выполняются, значит 'может'
-const result = age >= 18 && hasLicence && !isDrunk;
-console.log(`Человек управлять машиной : ${result ? 'может' : 'не может'}`);
+const canDrive = age >= 18 && hasLicence && !isDrunk;
+console.log(`Человек управлять машиной : ${canDrive ? 'может' : 'не может'}`);
 
