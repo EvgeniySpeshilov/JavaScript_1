@@ -3,22 +3,22 @@ const greetingLanguage = prompt('Выберите язык для общения
 
 //основной код, для перебора вариантов используем switch
 
-  switch(greetingLanguage) {
+switch(greetingLanguage) {
 	case 'en':
     case 'En':
 	case 'EN':
 		console.log('Hello my friend!');
-break;
+		break;
     case 'ru':
     case 'Ru':
 	case 'RU':
 		console.log('Привет, мой друг!');
-break;
+		break;
     case 'de':
     case 'De':
 	case 'DE':
 		console.log('hallo, mein Freund!');
-break;
+		break;
     default:
 		console.log('Я вас не понял, проверьте раскладку и повторите попытку.')	
 }
