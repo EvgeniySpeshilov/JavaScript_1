@@ -1,33 +1,20 @@
-let Array = [];
-const  resultArray = [];
-
-// Функция удаления из массива отрицательных значений
-function filteredValue(Array) {
-    for(let i = 0; i < Array.length; i++) {         //  запуск цикла перебора элементов массива
-       if (Array[i] >= 0) 
-	   {
-	     resultArray.push(Array[i]);                  // усли выполняется условие, тогда отправляем значение в новый массив
-	     console.log(Array[i],'false');                 // выводи на эран статус false 
-	   } 
-	   else 
-	   {
-		 console.log(Array[i],'true');                   // выводи на эран статус true если не выполнено условие
-	   }
-	}
-	return resultArray;
+const  array = [-1, 2, 34,-5, 23, 78, -7, -3];
+// Функция проверки отрицательности чисел
+function checkingPositiveNumbers(num) {
+    if (num > 0) 
+		return false                  
+		else return true; 
 }
+
+// Функция запуска проверки чисел массива и филтрации
+function filteredArray(array, checkingPositiveNumbers) {       
+	for (let i = 0; i < array.length + 1; i++) { 
+		console.log(i)        
+       if (checkingPositiveNumbers([i]) == false )
+		return  array.pop([i])
+	} console.log(array)
+}
+console.log(filteredArray(array, checkingPositiveNumbers))
 
 // функция высшего порядка. Выводит отфильтрованный массив с положительными числами
 
-function filtArray(Array, fn) {       
-	
-    const resultFn = fn(Array);
-	
-	return resultFn;
-			
-}
-//запускаем функцию и выводим результат
-
-const resultFn = filtArray([-1, 2, 34,-5, 23, 78, -7, -3, 0], filteredValue);
-console.log(filteredValue.name)               // Имя функции которая используется в функции высшего порядка
-console.log(resultFn)	
